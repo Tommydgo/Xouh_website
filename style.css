@@ -159,6 +159,15 @@ nav.scrolled {
   text-decoration: none;
   flex-shrink: 0;
   transition: color var(--t-fast);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-logo-img {
+  height: 28px;
+  width: auto;
+  filter: invert(1);
 }
 
 nav.scrolled .nav-logo { color: var(--c-white); }
