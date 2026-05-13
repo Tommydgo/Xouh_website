@@ -5,8 +5,8 @@
 
 /* ─── TOKENS ─── */
 :root {
-  --font-heading: 'Fraunces', serif;
-  --font-body:    'Outfit', sans-serif;
+  --font-heading: 'Clash Display', sans-serif;
+  --font-body:    'General Sans', sans-serif;
 
   /* Ocean depth gradient stops */
   --c-sky:    #D4EEFF;
