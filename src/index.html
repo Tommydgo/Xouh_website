@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xouh — Fitness Post-Thérapeutique</title>
+  <meta name="description" content="Xouh accompagne les patients en rémission avec des programmes de fitness personnalisés, conçus avec des professionnels de santé.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Depth Gauge (right side scroll indicator) -->
+  <aside class="depth-gauge" aria-hidden="true">
+    <div class="depth-track">
+      <div class="depth-fill" id="depthFill"></div>
+    </div>
+    <span class="depth-label" id="depthLabel">0 m</span>
+  </aside>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">XOUH</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#about" class="nav-link">Mission</a></li>
+      <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
+      <li><a href="#programs" class="nav-link">Programmes</a></li>
+      <li><a href="#team" class="nav-link">Équipe</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Fitness Post-Thérapeutique</p>
+        <h1 class="hero-title">
+          <span class="hero-x">X</span>OUH
+        </h1>
+        <p class="hero-tagline">Retrouvez le mouvement.<br>Retrouvez vous-même.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Explorer →</a>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="scroll-cue-text">PLONGEZ</span>
+        <div class="scroll-cue-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════ -->
+    <section class="section" id="about">
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p class="section-label">Notre Mission</p>
+          <h2 class="section-title">Le premier fitness conçu pour votre guérison</h2>
+          <div class="divider"></div>
+          <p class="section-body">
+            Xouh accompagne les patients en rémission avec des programmes de remise en forme
+            personnalisés, élaborés en collaboration étroite avec des professionnels de santé.
+            Chaque mouvement est pensé pour renforcer — jamais pour forcer.
+          </p>
+          <p class="section-body-dim">
+            Après un cancer, une chirurgie lourde ou une maladie chronique, reprendre
+            une activité physique demande une approche radicalement différente. Xouh est
+            né de cette nécessité, et de la conviction que le mouvement, bien dosé,
+            est l'un des plus puissants outils de guérison.
+          </p>
+        </div>
+
+        <div class="phone-wrap">
+          <div class="phone-shell">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="phone-top">
+                <span class="phone-name">Xouh</span>
+                <span class="phone-badge">Jour 14</span>
+              </div>
+              <div class="pcard">
+                <div class="pcard-label">Séance du jour</div>
+                <div class="pcard-value">Mobilité douce</div>
+                <div class="pbar"><div class="pbar-fill" style="width:68%"></div></div>
+              </div>
+              <div class="pcard">
+                <div class="pcard-label">Énergie ressentie</div>
+                <div class="pcard-row">
+                  <div class="pcard-value">Bonne</div>
+                  <div class="pcard-hint">↑ vs hier</div>
+                </div>
+                <div class="pbar"><div class="pbar-fill" style="width:72%"></div></div>
+              </div>
+              <div class="pcard">
+                <div class="pcard-label">Semaine en cours</div>
+                <div class="pcard-row">
+                  <div class="pcard-value">4 / 5</div>
+                  <div class="pcard-hint">séances</div>
+                </div>
+                <div class="pbar"><div class="pbar-fill" style="width:80%"></div></div>
+              </div>
+              <div class="pdoc">
+                <div class="pdoc-avatar">Dr</div>
+                <div>
+                  <div class="pdoc-name">Dr Sophie Marchand</div>
+                  <div class="pdoc-role">Oncologie · CHU Paris</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FEATURES
+    ════════════════════════════════════════ -->
+    <section class="section" id="features">
+      <div class="section-header center reveal">
+        <p class="section-label">Fonctionnalités</p>
+        <h2 class="section-title">Tout ce dont vous avez besoin<br>pour reprendre confiance</h2>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="fcard reveal" data-delay="0">
+          <div class="fcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </div>
+          <h3 class="fcard-title">Programmes personnalisés</h3>
+          <p class="fcard-desc">Adaptés à votre type de rémission, votre niveau d'énergie et vos objectifs. Validés par des kinésithérapeutes spécialisés.</p>
+        </div>
+
+        <div class="fcard reveal" data-delay="1">
+          <div class="fcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="fcard-title">Suivi de l'énergie</h3>
+          <p class="fcard-desc">Le module de fatigue intelligente ajuste l'intensité de chaque séance en temps réel selon votre ressenti quotidien.</p>
+        </div>
+
+        <div class="fcard reveal" data-delay="2">
+          <div class="fcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3 class="fcard-title">Communauté bienveillante</h3>
+          <p class="fcard-desc">Des milliers de patients partagent votre parcours. Des défis doux, des encouragements réels, zéro pression de performance.</p>
+        </div>
+
+        <div class="fcard reveal" data-delay="0">
+          <div class="fcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </div>
+          <h3 class="fcard-title">Progression mesurable</h3>
+          <p class="fcard-desc">Visualisez votre évolution semaine après semaine : souplesse, endurance, bien-être global.</p>
+        </div>
+
+        <div class="fcard reveal" data-delay="1">
+          <div class="fcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="fcard-title">Séances courtes & efficaces</h3>
+          <p class="fcard-desc">De 10 à 30 minutes, toujours réalisables à domicile. Conçues pour les jours de fatigue comme pour les jours de forme.</p>
+        </div>
+
+        <div class="fcard reveal" data-delay="2">
+          <div class="fcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="fcard-title">Validation médicale</h3>
+          <p class="fcard-desc">Chaque programme est développé avec oncologues, rhumatologues et kinésithérapeutes. Votre sécurité, avant tout.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROGRAMS
+    ════════════════════════════════════════ -->
+    <section class="section" id="programs">
+      <div class="programs-header reveal">
+        <div>
+          <p class="section-label">Programmes</p>
+          <h2 class="section-title">Quatre voies vers le mouvement</h2>
+        </div>
+        <p class="programs-note">Tous niveaux · Aucun équipement requis</p>
+      </div>
+
+      <div class="programs-grid">
+
+        <div class="prgcard prg-1 reveal" data-delay="0">
+          <span class="prg-tag">Cardio doux</span>
+          <h3 class="prg-title">Éveil Cardiovasculaire</h3>
+          <p class="prg-desc">Marche active, respiration guidée, étirements dynamiques. Retrouvez progressivement votre souffle et votre rythme cardiaque.</p>
+          <div class="prg-meta">
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Durée</span><span class="prg-meta-val">15–25 min</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Fréquence</span><span class="prg-meta-val">3–5×/sem</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Niveau</span><span class="prg-meta-val">Débutant</span></div>
+          </div>
+        </div>
+
+        <div class="prgcard prg-2 reveal" data-delay="1">
+          <span class="prg-tag">Yoga thérapeutique</span>
+          <h3 class="prg-title">Ancrage & Souplesse</h3>
+          <p class="prg-desc">Yoga doux et méditation guidée pour réduire l'inflammation, améliorer la mobilité et reconnecter corps et esprit après un traitement intensif.</p>
+          <div class="prg-meta">
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Durée</span><span class="prg-meta-val">20–40 min</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Fréquence</span><span class="prg-meta-val">Quotidien</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Niveau</span><span class="prg-meta-val">Tous niveaux</span></div>
+          </div>
+        </div>
+
+        <div class="prgcard prg-3 reveal" data-delay="0">
+          <span class="prg-tag">Renforcement</span>
+          <h3 class="prg-title">Force Progressive</h3>
+          <p class="prg-desc">Exercices au poids du corps adaptés pour reconstruire la masse musculaire perdue, améliorer l'équilibre et lutter contre la sarcopénie.</p>
+          <div class="prg-meta">
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Durée</span><span class="prg-meta-val">20–30 min</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Fréquence</span><span class="prg-meta-val">2–3×/sem</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Niveau</span><span class="prg-meta-val">Intermédiaire</span></div>
+          </div>
+        </div>
+
+        <div class="prgcard prg-4 reveal" data-delay="1">
+          <span class="prg-tag">Mobilité</span>
+          <h3 class="prg-title">Liberté Articulaire</h3>
+          <p class="prg-desc">Récupération des amplitudes après chirurgie ou traitement. Programmes spécifiques post-mastectomie, post-chimio, post-greffe.</p>
+          <div class="prg-meta">
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Durée</span><span class="prg-meta-val">10–20 min</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Fréquence</span><span class="prg-meta-val">Quotidien</span></div>
+            <div class="prg-meta-item"><span class="prg-meta-lbl">Niveau</span><span class="prg-meta-val">Adaptatif</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         HOW IT WORKS
+    ════════════════════════════════════════ -->
+    <section class="section" id="how">
+      <div class="section-header center reveal">
+        <p class="section-label">Comment ça marche</p>
+        <h2 class="section-title">Simple. Progressif. Bienveillant.</h2>
+      </div>
+
+      <div class="steps-row">
+        <div class="step reveal" data-delay="0">
+          <div class="step-num" aria-hidden="true">01</div>
+          <h3 class="step-title">Créez votre profil santé</h3>
+          <p class="step-desc">Renseignez votre type de rémission, vos capacités actuelles et vos objectifs. Votre médecin peut compléter votre dossier directement.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step reveal" data-delay="1">
+          <div class="step-num" aria-hidden="true">02</div>
+          <h3 class="step-title">Recevez votre programme</h3>
+          <p class="step-desc">Notre algorithme, validé par des professionnels de santé, génère un plan de 8 semaines entièrement adapté à votre situation.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step reveal" data-delay="2">
+          <div class="step-num" aria-hidden="true">03</div>
+          <h3 class="step-title">Progressez à votre rythme</h3>
+          <p class="step-desc">Chaque séance s'adapte à votre fatigue du jour. Pas de performance, pas de compétition — uniquement votre bien-être qui compte.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TEAM
+    ════════════════════════════════════════ -->
+    <section class="section" id="team">
+      <div class="section-header reveal">
+        <p class="section-label">L'équipe</p>
+        <h2 class="section-title">Trois étudiants, une mission</h2>
+        <p class="section-body" style="max-width:540px">
+          Nous sommes trois étudiants passionnés d'informatique à Epitech, animés par la conviction que la technologie peut changer des vies.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card reveal" data-delay="0">
+          <div class="team-photo-wrap">
+            <img src="../resources/tommy_profile.jpeg" alt="Photo de Tommy Diago" class="team-photo" loading="lazy" width="180" height="180">
+            <div class="team-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Tommy</h3>
+            <p class="team-role">Développeur</p>
+            <a href="mailto:tommy.diago@epitech.eu" class="team-email">tommy.diago@epitech.eu</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" data-delay="1">
+          <div class="team-photo-wrap">
+            <img src="../resources/yael_profile.jpg" alt="Photo de Yaël Pierre" class="team-photo" loading="lazy" width="180" height="180">
+            <div class="team-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Yaël</h3>
+            <p class="team-role">Développeur</p>
+            <a href="mailto:yael.pierre@epitech.eu" class="team-email">yael.pierre@epitech.eu</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" data-delay="2">
+          <div class="team-photo-wrap">
+            <img src="../resources/thomas_profile.png" alt="Photo de Thomas Roger" class="team-photo" loading="lazy" width="180" height="180">
+            <div class="team-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Thomas</h3>
+            <p class="team-role">Développeur</p>
+            <a href="mailto:thomas.roger@epitech.eu" class="team-email">thomas.roger@epitech.eu</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         VALUES
+    ════════════════════════════════════════ -->
+    <section class="section" id="values">
+      <div class="section-header center reveal">
+        <p class="section-label">Nos Valeurs</p>
+        <h2 class="section-title">Ce qui nous guide</h2>
+      </div>
+
+      <div class="values-grid">
+
+        <div class="vcard reveal" data-delay="0">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Open Source</h3>
+          <p class="vcard-desc">La plupart de notre travail sera en libre accès, modifiable et redistribuable librement, tant que ce n'est pas à but lucratif.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="1">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Gratuit</h3>
+          <p class="vcard-desc">Notre solution est entièrement gratuite pour assurer que chacun, peu importe ses moyens, peut accéder à nos outils et services.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="2">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Simple</h3>
+          <p class="vcard-desc">Nous privilégions la simplicité afin que tous, quel que soit leur niveau technique, puissent bénéficier de nos services sans complications.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="0">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Non Lucratif</h3>
+          <p class="vcard-desc">Pas de publicité, pas de sponsors, pas de monétisation. Notre objectif est d'aider et soutenir, uniquement.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="1">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Sécurisé</h3>
+          <p class="vcard-desc">La protection des données et la sécurité de nos utilisateurs sont primordiales. Les meilleures pratiques pour votre confidentialité.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="2">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Transparence</h3>
+          <p class="vcard-desc">Toutes les modifications effectuées seront toujours précisées et documentées. Transparence totale envers nos utilisateurs.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="0">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Empathie</h3>
+          <p class="vcard-desc">Touchés par une intervention de l'ICM, nous avons pour mission de mener à bien ce projet avec bienveillance et compréhension.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="1">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Inclusion</h3>
+          <p class="vcard-desc">Un environnement inclusif où chacun, sans discrimination, peu importe son âge ou son niveau en informatique, peut en bénéficier.</p>
+        </div>
+
+        <div class="vcard reveal" data-delay="2">
+          <div class="vcard-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="vcard-title">Passion</h3>
+          <p class="vcard-desc">Animés par une passion sincère pour notre mission. Des étudiants engagés qui veulent contribuer à leur façon à un monde meilleur.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════ -->
+    <section class="section" id="testimonials">
+      <div class="section-header reveal">
+        <p class="section-label">Témoignages</p>
+        <h2 class="section-title">Ils ont fait confiance à Xouh</h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="tcard reveal" data-delay="0">
+          <div class="tcard-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote class="tcard-quote">
+            « Après ma chimiothérapie, j'avais l'impression d'habiter un corps étranger. Xouh m'a aidée à le réapprivoiser, une séance de 15 minutes à la fois. »
+          </blockquote>
+          <div class="tcard-author">
+            <div class="tcard-avatar">ML</div>
+            <div>
+              <div class="tcard-name">Marie-Laure D.</div>
+              <div class="tcard-role">Rémission cancer du sein · 14 mois</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard reveal" data-delay="1">
+          <div class="tcard-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote class="tcard-quote">
+            « Mon oncologue a lui-même recommandé Xouh. Ce qui m'a convaincu, c'est qu'il ne m'a jamais poussé au-delà de mes limites. Il les a respectées, puis doucement repoussées. »
+          </blockquote>
+          <div class="tcard-author">
+            <div class="tcard-avatar">TH</div>
+            <div>
+              <div class="tcard-name">Thomas H.</div>
+              <div class="tcard-role">Post-greffe osseuse · 8 mois</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard reveal" data-delay="2">
+          <div class="tcard-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote class="tcard-quote">
+            « Je suis kinésithérapeute et je prescris Xouh à mes patients en sortie d'hospitalisation. L'équipe médicale est sérieuse et les exercices sont très bien construits. »
+          </blockquote>
+          <div class="tcard-author">
+            <div class="tcard-avatar">SF</div>
+            <div>
+              <div class="tcard-name">Sophie F., kinésithérapeute</div>
+              <div class="tcard-role">Paris 15e · Spécialiste post-cancer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CTA / CONTACT
+    ════════════════════════════════════════ -->
+    <section class="section cta-section" id="contact">
+      <div class="cta-inner reveal">
+        <p class="section-label center">Commencez aujourd'hui</p>
+        <h2 class="cta-title">Votre corps mérite<br>une seconde chance.</h2>
+        <p class="cta-sub">Gratuit. Open source. Sans publicité. Rejoignez des milliers de patients qui ont choisi de reprendre le mouvement avec Xouh.</p>
+        <div class="cta-actions">
+          <a href="https://linktr.ee/xouh.project" target="_blank" rel="noopener" class="btn btn-glow">Nous contacter →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">XOUH</span>
+      <p class="footer-copy">© 2025 Xouh — Projet étudiant non-lucratif</p>
+      <div class="footer-links">
+        <a href="https://linktr.ee/xouh.project" target="_blank" rel="noopener">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
